@@ -1,0 +1,10 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: ""
+        LoadBalancerInfo:
+          ContainerName: "aws-hello-world-rest-api"
+          ContainerPort: "80"
+        PlatformVersion: "LATEST"
