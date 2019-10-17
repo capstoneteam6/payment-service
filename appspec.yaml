@@ -3,8 +3,8 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: ""
+        TaskDefinition: "arn:aws:ecs:us-east-1:813048754227:task-definition/payment-service-task:6"
         LoadBalancerInfo:
-          ContainerName: "aws-hello-world-rest-api"
-          ContainerPort: "80"
+          ContainerName: "payment-service-container"
+          ContainerPort: "8100"
         PlatformVersion: "LATEST"
